@@ -4,6 +4,35 @@
 {% endblock %}
 {% block content %}
 <div id="frontpage">
-    <h1> Visualization of CRISPR knockout screens </h1>
+    <h1>Welcome to the SARS-CoV2 CRISPR screen compendium website!</h1>
+    <div class="info-boxes">
+        <div class="info-box" id="contrib-box">
+            <h3>What is this website?</h3>
+            <p>This website bundles pooled SARS-CoV2 CRISPR screen and provides them in a uniformly analyzed way, allowing for easy visualization and comparison.</p>
+            <h3>How to use?</h3>
+            <p>This website is based on the <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-015-0843-6">VISPR tool</a> with only very minor modifications. Here are some tips to get you started:
+            </p>
+            <ul>
+                <li>Use the <b>Experiment</b>-tab at the top of the page to select an experiment</li>
+                <li>The <b>Quality Control</b>-tab shows you basic quality controls for the select experiment</li>
+                <li>View a ranked list of postively- and negatively selected sgRNAs/genes for the currently selected experiment in the <b>Results</b>-tab</li>
+                <li>To overlap genes identified in different experiments use the <b>Compare Experiments</b>-tab, where you can select multiple experiments to see a Venn-diagram of the overlap</li>
+            </ul>
+            <h3>How to contribute?</h3>
+            <p>If you performed a pooled SARS-CoV2 CRISPR screen, we would appreciate your contribution to this compendium. To add your data to the website, please open an issue on our <a href="https://github.com/moritzschaefer/covid19-screens">GitHub repository</a></p>
+            <h3>How to cite?</h3>
+            <p>Please consider citing our work and the works that made this website possible:</p>
+            <ul>
+                <li>Until publication, here is our <a href="https://doi.org/10.1101/2021.06.04.447090">preprint on BioRxiv</a></li>
+                <li>The VISPR software that is used to display this website has been <a href="https://doi.org/10.1186/s13059-015-0843-6">published here</a></li>
+                <li>Also consider citing the authors of the various studies that are presented on this website. See the info-box on the right for references.</li>
+            </ul>
+        </div>
+        <div class="info-box" id="experiments-box">
+            <h3>here is some text to fill this box</h3>
+            <p>Proin quam nisl, tincidunt et, mattis eget, convallis nec, purusNam vestibulum accumsan nisl.  Vivamus id enim.  Cras placerat accumsan nulla.  Nam a sapien.  Etiam vel tortor sodales tellus ultricies commodo.  Nunc porta vulputate tellus.  Proin neque massa, cursus ut, gravida ut, lobortis eget, lacus.  Nullam tempus.  Nunc aliquet, augue nec adipiscing interdum, lacus tellus malesuada massa, quis varius mi purus non odio.  Nullam libero mauris, consequat quis, varius et, dictum id, arcu.  .
+            </p>
+        </div>
+    </div>
 </div>
 {% endblock %}
