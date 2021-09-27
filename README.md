@@ -1,5 +1,11 @@
 This is a fork from https://bitbucket.org/liulab/vispr/ with some minor visual modifications for our SARS-CoV2 CRISPR-screen website (http://sarscrisprscreens.epi.ufl.edu/)
 
+Run
+===
+
+A virtualenv was created using python3.6 -m venv venv, in it python setup.py develop was called. 
+TODO: we need python3.7 or higher to be able to run python setup.py  develop
+
 
 VISPR - A visualization framework for CRISPR data.
 ==================================================
