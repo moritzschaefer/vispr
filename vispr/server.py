@@ -20,7 +20,7 @@ app.jinja_env.trim_blocks = True
 app.jinja_env.lstrip_blocks = True
 
 with open(os.path.join(os.path.dirname(__file__), "captions.yaml")) as f:
-    CAPTIONS = yaml.load(f)
+    CAPTIONS = yaml.safe_load(f)
 
 
 @app.route("/ping")

@@ -37,7 +37,7 @@ def init_server(*configs, host="127.0.0.1", port=5000):
     print("Loading data.")
     for path in configs:
         with open(path) as f:
-            config = yaml.load(f)
+            config = yaml.full_load(f)
         try:
             app.screens.add(config, parentdir=os.path.dirname(path))
         except KeyError as e:
@@ -91,7 +91,7 @@ def plots(configpath, prefix):
         os.makedirs(directory)
 
     with open(configpath) as f:
-        screen = Screen(yaml.load(f), parentdir=os.path.dirname(configpath))
+        screen = Screen(yaml.full_load(f), parentdir=os.path.dirname(configpath))
 
     def write(json, name):
         with open(prefix + name + ".vega.json", "w") as out:
