@@ -53,7 +53,7 @@ def init_server(*configs, host="127.0.0.1", port=5000):
         "Open:  go to " + host + ":{} in your browser.".format(port))
     logging.info("Note: Safari and Internet Explorer are currently unsupported.")
     logging.info("Close: hit Ctrl-C in this terminal.")
-    app.run(host=host, port=port)
+    app.run(host=host, port=port)  # , debug=True)
 
 
 def test_server(host="127.0.0.1",port=5000, update=False):
